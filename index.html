@@ -5,8 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Tailor Workshop</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </head>
   <body>
+    <div id="header-hero-container">
+      <header>
+        <div class="flex container">
+          <a href="#" id="logo">LOGO</a>
+          <nav>
+            <button id="nav-toggle" class="hamburger-menu">
+              <span class="strip"></span>
+              <span class="strip"></span>
+              <span class="strip"></span>
+            </button>
+
+            <ul id="nav-menu">
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#ofert">Oferta</a></li>
+              <li><a href="#price">Cennik</a></li>
+              <li><a href="#gallery">Galeria</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section id="hero">
+        <div class="fade"></div>
+        <div class="hero-text">
+          <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+            architecto. Voluptates dolor in id, corporis magni illum non, omnis
+            ullam suscipit nisi libero inventore quia sunt deleniti aspernatur
+            provident dignissimos.
+          </p>
+        </div>
+      </section>
+
+      <section id="empty">
+        <div class="container"></div>
+      </section>
+
+      <section id="price">
+        <div class="container">
+          <div class="flex"></div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+
+          <div class="flex">
+            <div id="form-container">
+              <h3>Contact Form</h3>
+              <form>
+                <label for="name">Imię</label>
+                <input type="text" id="name" />
+
+                <label for="email">Email</label>
+                <input type="text" id="email" />
+
+                <label for="subject">Temat</label>
+                <input type="text" id="subject" />
+
+                <label for="message">Wiadomość</label>
+                <textarea id="message">Napisz tu swoją wiadomość..</textarea>
+
+                <input type="submit" value="Wyślij" class="rounded" />
+              </form>
+            </div>
+
+            <div id="address-container">
+              <label>Adres</label>
+              <address>
+                ul. Józefińska 5, 30-529 Kraków
+              </address>
+
+              <label>Kontakt telefoniczny</label>
+              <a href="#">504 633 146</a>
+
+              <label>Adres email</label>
+              <a href="#">ouremail@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="flex container">
+          <div class="footer-about">
+            <h5>O nas</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+              facere laudantium magnam voluptatum autem. Amet aliquid nesciunt
+              veritatis aliquam.
+            </p>
+          </div>
+
+          <div class="footer-subscribe">
+            <h5 class="follow-us">Follow Us</h5>
+            <ul>
+              <li>
+                <a href="#"><span class="fab fa-facebook-f"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="fab fa-twitter"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="fab fa-instagram"></span></a>
+              </li>
+              <li>
+                <a href="#"><span class="fab fa-linkedin-in"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <small>
+          Copyright &copy; 2020 All rights reserved | This page is made with
+          <span class="fa fa-heart"></span> by
+          <a href="https://www.linkedin.com/in/filip-wydra/" target="_blank"
+            >Filip Wydra</a
+          >
+        </small>
+      </footer>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>
