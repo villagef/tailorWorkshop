@@ -213,17 +213,70 @@ header ul.is-sticky li a:hover, header ul.is-sticky li a.active {
 
 /* end: hero section styles */
 
+/* start: empty */
+
 #empty {
     width: 100%;
     height: 100%;
-    background-color: green;
 }
+
+/* end: empty */
+
+/* start: price us styles */
 
 #price {
     width: 100%;
-    height: 100%;
-    background-color: red;
+    padding-bottom: 5rem;
 }
+
+#price h2 {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+#price-container {
+    width: 100%;
+    background: #fff;
+    padding: 3rem;
+    box-sizing: border-box;
+    height: 0%;
+}
+
+#price table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#price td, th {
+    padding-left: 8px
+}
+
+#price thead {
+    background: #f69314;
+}
+
+#price thead tr {
+    height: 60px;
+    background: #f69314;
+    font-size: 16px;
+}
+
+#price tbody tr {
+    height: 48px;
+    border-bottom: 1px solid #E3F1D5;
+}
+
+#price td, th {
+    text-align: left;
+}
+
+/* end: price section styles */
 
 /* start: contact us styles */
 
