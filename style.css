@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap");
 /* start: global styles */
 
 :root {
@@ -409,12 +410,12 @@ th {
 
 footer {
   background: #333;
-  padding: 3rem 0;
+  padding: 2rem 0;
   color: var(--second-color);
 }
 
 footer .flex {
-  padding-bottom: 6rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid #777;
 }
 
@@ -457,14 +458,6 @@ footer .footer-quick-links ul li a {
 
 footer .footer-quick-links ul li a:hover {
   color: var(--third-color);
-}
-
-footer .footer-subscribe {
-  width: 35%;
-}
-
-#subscribe-container {
-  position: relative;
 }
 
 footer .footer-subscribe ul {
