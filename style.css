@@ -3,6 +3,8 @@
 
 :root {
   --main-color: #e08040;
+  --second-color: rgb(109, 109, 109);
+  --third-color: #fff;
 }
 
 body {
@@ -11,7 +13,6 @@ body {
   padding: 0;
   font-size: 1rem;
   font-weight: 400;
-  color: #777;
   line-height: 1.7;
 }
 html {
@@ -122,10 +123,9 @@ header {
 }
 
 #logo {
-  font-family: "Roboto", "Helvetica", "Sans-serif";
-  font-size: 1.7rem;
-  font-weight: 800;
-  color: #fff;
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  color: var(--third-color);
   text-decoration: none;
   position: relative;
   top: 4px;
@@ -133,7 +133,7 @@ header {
 
 .hamburger-menu {
   background-color: transparent;
-  border: 1px #fff;
+  border: 1px var(--third-color);
   padding: 3px 5px;
   width: 30px;
   margin-top: 10px;
@@ -144,7 +144,7 @@ header {
 .hamburger-menu .strip {
   display: block;
   height: 2px;
-  background-color: #fff;
+  background-color: var(--third-color);
   margin: 4px 0;
 }
 
@@ -173,7 +173,7 @@ header ul.is-sticky li a {
 
 header ul li a:hover,
 header ul li a.active {
-  color: #fff;
+  color: var(--third-color);
 }
 
 header ul.is-sticky li a:hover,
@@ -215,8 +215,8 @@ header ul.is-sticky li a.active {
   left: 0;
   right: 0;
   z-index: 2;
-  color: #fff;
-  width: 500px;
+  color: var(--third-color);
+  width: 700px;
   text-align: center;
 }
 
@@ -251,7 +251,7 @@ header ul.is-sticky li a.active {
 
 #price-container {
   width: 100%;
-  background: #fff;
+  background: var(--third-color);
   padding: 3rem;
   box-sizing: border-box;
   height: 0%;
@@ -277,6 +277,10 @@ th {
   background: var(--main-color);
 }
 
+#price tbody {
+  color: var(--second-color);
+}
+
 #price thead tr {
   height: 60px;
   background: var(--main-color);
@@ -300,6 +304,7 @@ th {
 #contact {
   background: #f8f9fa;
   padding: 4rem 0 8rem;
+  color: var(--second-color);
 }
 
 #contact h2 {
@@ -309,7 +314,7 @@ th {
 
 #form-container {
   width: 58%;
-  background: #fff;
+  background: var(--third-color);
   padding: 3rem;
   box-sizing: border-box;
   height: 0%;
@@ -349,7 +354,7 @@ th {
 
 #address-container {
   width: 38%;
-  background: #fff;
+  background: var(--third-color);
   padding: 1.5rem;
   box-sizing: border-box;
   height: 0%;
@@ -394,7 +399,7 @@ th {
 
 #map-container {
   width: 100%;
-  background: #fff;
+  background: var(--third-color);
   padding: 3rem;
   box-sizing: border-box;
   height: 0%;
@@ -405,6 +410,7 @@ th {
 footer {
   background: #333;
   padding: 3rem 0;
+  color: var(--second-color);
 }
 
 footer .flex {
@@ -413,7 +419,7 @@ footer .flex {
 }
 
 footer h5 {
-  color: #fff;
+  color: var(--third-color);
   margin-bottom: 1rem;
   font-weight: 300;
 }
@@ -445,12 +451,12 @@ footer .footer-quick-links ul li {
 }
 
 footer .footer-quick-links ul li a {
-  color: #777;
+  color: var(--second-color);
   text-decoration: none;
 }
 
 footer .footer-quick-links ul li a:hover {
-  color: #fff;
+  color: var(--third-color);
 }
 
 footer .footer-subscribe {
@@ -478,11 +484,11 @@ footer .footer-subscribe ul li:first-child {
 
 footer .footer-subscribe ul li a {
   text-decoration: none;
-  color: #777;
+  color: var(--second-color);
 }
 
 footer .footer-subscribe ul li a:hover {
-  color: #fff;
+  color: var(--third-color);
 }
 
 footer small {
@@ -493,12 +499,12 @@ footer small {
 }
 
 footer small a {
-  color: #777;
+  color: var(--second-color);
   text-decoration: none;
 }
 
 footer small a:hover {
-  color: #fff;
+  color: var(--third-color);
 }
 
 /* end: footer styles */
@@ -514,7 +520,7 @@ footer small a:hover {
   }
   nav ul {
     position: fixed;
-    background: #fff;
+    background: var(--third-color);
     right: -100%;
     top: 0;
     margin: 0;
@@ -529,7 +535,7 @@ footer small a:hover {
     right: 2rem;
     top: 1.5rem;
     font-size: 30px;
-    color: #777;
+    color: var(--second-color);
     cursor: pointer;
     display: block;
     line-height: 1;
@@ -605,6 +611,9 @@ footer small a:hover {
 }
 
 @media (max-width: 500px) {
+  #logo {
+    font-size: 1.5rem;
+  }
   #hero .hero-text {
     width: 330px;
   }
@@ -627,6 +636,9 @@ footer small a:hover {
 }
 
 @media (max-width: 400px) {
+  #logo {
+    font-size: 1.2rem;
+  }
   #hero .hero-text {
     max-width: 275px;
     width: 100%;
